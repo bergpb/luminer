@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Luminer</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content center text-center >
+  <ion-grid>
+    <ion-col (click)="alteraEstado()" 
+             [ngClass]="(isLedOn == true) ? 'lightbulb_on' : 'lightbulb_off'">
+      <div class="click_area" ></div> 
+    </ion-col>
+    <div class="buttons_">
+      <ion-row>
+        <ion-col>
+          <button (click)="alteraCor('laranja')" ion-button color="laranja">Laranja</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('azul')" ion-button color="azul">Azul</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('violeta')" ion-button color="violeta">Violeta</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button (click)="alteraCor('amarelo')" ion-button color="amarelo">Amarelo</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('rosa')" ion-button color="rosa">Rosa</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('roxo')" ion-button color="roxo">Roxo</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button (click)="alteraCor('ciano')" ion-button color="ciano">Ciano</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('azul_meianoite')" ion-button color="azul_meianoite">Azul(Meia-Noite)</button>
+        </ion-col>
+        <ion-col>
+          <button (click)="alteraCor('cereja')" ion-button color="cereja">Cereja</button>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+</ion-content>

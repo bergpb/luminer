@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Configurações
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col>
+      <ion-item>
+        <ion-input placeholder="Insira a url aqui.." type="text" [(ngModel)]="url"></ion-input>
+        <button ion-button clear item-right color="secondary" (click)="submitUrl()">Salvar</button>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-footer>
+    <ion-col>
+      <h4 text-center>IP salvo: {{private_url}}</h4>
+    </ion-col>
+    <ion-col>
+      <button ion-button block color="danger" (click)="deleteUrl()">Deletar</button>
+    </ion-col>
+  </ion-footer>
+</ion-content>
